@@ -6,3 +6,9 @@
 
 
 '''
+
+def f1(a, b):
+    if a == b:
+        return a
+    return a + f1(a+1, b)
+print(f1(3, 5))
