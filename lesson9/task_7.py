@@ -17,7 +17,7 @@ import re
 
 list_people = [{"name":"Yana", "login":"yana25", "password":"123456"},
                {"name":"Kirill", "login":"21_Kirill_05", "password":"56865265"},
-               {"name":"Dasha", "login":"Dasha_2005", "password":"21072005"}]
+               {"name":"Dasha", "login":"Dasha2005", "password":"21072005"}]
 
 l1 = filter(lambda x : True if len(x['password']) >= 5 else False, list_people)
 print(list(l1))
