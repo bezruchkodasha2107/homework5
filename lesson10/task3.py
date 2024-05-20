@@ -7,3 +7,15 @@
 Выполняеся функция <имя> с аргусентами <аргументы> 
 После выполнения функции напечатать строку "<имя функции> - завершена"
 """
+def log_decorator(f):
+    def wrapper(*args):
+        print(f"Выполняется функция {f.__name__} с аргументами {args}")
+        f(*args)
+        print(f"{f.__name__} - завершена")
+    return wrapper
+
+@log_decorator
+def hello(name):
+    print(f"Привет, {name}")
+
+hello('Даша')
