@@ -87,18 +87,16 @@ def chicken(f):
 @bread
 @onion
 @tomato
-@beef
-def burger1():
-    pass
+def beef():
+    print("### говядина ###")
 
 @bread
 @cheese
 @salad
-@chicken
-def burger2():
-    pass
+def chicken():
+    print("|||| курица ||||")
 
-burger1()
-burger2()
+beef()
+chicken()
 
 
