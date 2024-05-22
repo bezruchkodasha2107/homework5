@@ -32,3 +32,13 @@
 
 
 '''
+
+def line(slist, count=0, sep='-'):
+    for i in slist:
+        if isinstance(i, list):
+            line(i, count=count+1)
+        else:
+            print(sep * count + str(i))
+
+slist = [1, 2, 3, [4, [5, 6], 7], 8, 9]
+line(slist)
