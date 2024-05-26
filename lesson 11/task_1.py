@@ -56,14 +56,14 @@ class Phone:
         return (self.brand, self.model, self.issue_year)
     
     def __str__(self):
-        print(f"Бренд: {self.brand}\n"
-              f"Модель: {self.model}\n"
-              f"Год выпуска: {self.issue_year}")
+        return f"Бренд: {self.brand}\n" \
+               f"Модель: {self.model}\n" \
+               f"Год выпуска: {self.issue_year}"
 
-phone1 = Phone('Iphone', '14 Pro Max', 2022)
+phone1 = Phone('Apple', 'Iphone 14 Pro Max', 2022)
 phone1.receive_call('Макс')
 print(phone1.get_info())
-phone1.__str__()
+print(phone1)
 
 
     
